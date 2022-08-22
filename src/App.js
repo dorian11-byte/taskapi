@@ -13,7 +13,7 @@ function App() {
 
   const fetchPokemons = async () => {
     try {
-      const data = await getPokemons(); 
+      const data = await getPokemons();
       setPokemons(data.results);
     }catch(e) {
 
@@ -21,7 +21,7 @@ function App() {
   }
 
   useEffect(() => {
-      fetchPokemons();
+    fetchPokemons();
   }, []);
   return (
 

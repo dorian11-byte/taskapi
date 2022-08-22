@@ -23,7 +23,7 @@ const Pokemon = (props) => {
                         {pokemon.types.map((type, idx) => {
                             return (
                                 <div key={idx} className="pokemon-type-text">
-                                {type.type.name}
+                                    {type.type.name}
                                 </div>
                             );
                             })}
