@@ -1,6 +1,6 @@
 # Creating a Pokedex using the API of PokeApi in ReactJs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is maded for Dorian Raygoza - Developer
 
 ## Description of the project
 
