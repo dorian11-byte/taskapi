@@ -3,7 +3,7 @@ import Pokemon from './Pokemon';
 
 const Pokeres = (props) => {
 
-    const {pokemons} = props;
+    const { pokemons } = props;
 
     return (
         <div>
