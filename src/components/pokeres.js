@@ -9,7 +9,6 @@ const Pokeres = (props) => {
         <div>
             <div className="header">
                 <h1>Pokemones</h1>
-                <div>pagination</div>
             </div>
             <div className="pokedex-grid">
                 {pokemons.map((pokemon, idx) => {

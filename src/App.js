@@ -1,39 +1,17 @@
 import React from 'react';
 import './styles.css';
 import Navbar from './components/navbar';
-import Searchbar from './components/searchbar';
-import Pokeres from './components/pokeres';
-import {getPokemons, getPokemonData, searchPokemon} from './api';
-
-const {useState, useEffect} = React; 
+import {Link} from 'react-router-dom';
 
 function App() {
-
-  const [pokemons, setPokemons] = useState([]);
-
-  const fetchPokemons = async () => {
-    try {
-      const data = await getPokemons(100, 200);
-      const promises = data.results.map(async (pokemon) => {
-        return await getPokemonData(pokemon.url);
-      });
-      const results = await Promise.all(promises);
-      setPokemons(results);
-    }catch(e) {
-
-    }
-  }
-
-  useEffect(() => {
-    fetchPokemons();
-  }, []);
 
   return (
     <div>
       <Navbar />
-      <div className="App">
-          <Searchbar />
-          <Pokeres  pokemons={pokemons}/>
+      <div className="app-links">
+          <h1 className="title-welcome">Welcome to the Pokedex!</h1>
+          <Link to='/elements' className="link"> Elements </Link> <br/>
+          <Link to='/ElementsComparation' className="link"> Elements Compararion </Link> <br/>
       </div>
     </div>
   );

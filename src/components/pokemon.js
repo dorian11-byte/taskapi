@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Pokemon = (props) => {
     
     const { pokemon } = props;
+
     
     return (
         <div className="pokemon-card">
@@ -16,7 +18,7 @@ const Pokemon = (props) => {
             <div className="card-body">
                 <div className="card-top">
                     <h3>{pokemon.name}</h3>
-                    <div>#{pokemon.id}</div>
+                    <div>No: {pokemon.id}</div>
                 </div>
                 <div className="card-bottom">
                     <div className="pokemon-type">
@@ -27,6 +29,9 @@ const Pokemon = (props) => {
                                 </div>
                             );
                             })}
+                    </div>
+                    <div>
+                        <Link to={"/pokemon/" + pokemon.id} ><button className="pokemon-btn-detail"> View Pokemon </button></Link>
                     </div>
                 </div>
             </div>
