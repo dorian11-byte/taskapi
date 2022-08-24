@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles.css';
-import Navbar from './components/navbar';
+import '../styles.css';
+import Navbar from './navbar';
 import { useParams } from 'react-router';
 
 
