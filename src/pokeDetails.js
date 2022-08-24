@@ -13,8 +13,11 @@ const Details = () => {
             <Navbar />
             <div className="pokemon-card-detail">
 
+                <div className="pokemon-title-name">
+                    {params.id}
+                </div>
                 <div className="pokemon-num">
-                    No: {params.id}
+
                 </div>
                 <div className="pokemon-detail-img">
 

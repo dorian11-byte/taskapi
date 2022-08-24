@@ -31,7 +31,7 @@ const Pokemon = (props) => {
                             })}
                     </div>
                     <div>
-                        <Link to={"/pokemon/" + pokemon.id} ><button className="pokemon-btn-detail"> View Pokemon </button></Link>
+                        <Link to={"/pokemon/" + pokemon.name } ><button className="pokemon-btn-detail"> View Pokemon </button></Link>
                     </div>
                 </div>
             </div>
