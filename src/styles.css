@@ -139,6 +139,7 @@ nav{
     height: 30px;
 }
 
+/*
 .pokemon-card-detail{
     display: flex;
     flex-direction: column;
@@ -152,5 +153,12 @@ nav{
     height: 350px;
     border-radius: 20px;
     background-color: rgb(76, 76, 76);
+}
+*/
+
+.pokemon-title-name {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 

@@ -3,7 +3,7 @@ import './styles.css';
 import Navbar from './components/navbar';
 import Searchbar from './components/searchbar';
 import Pokeres from './components/pokeres';
-import {getPokemons, getPokemonData, searchPokemon} from './api';
+import {getPokemons, getPokemonData} from './api';
 
 const {useState, useEffect} = React; 
 
