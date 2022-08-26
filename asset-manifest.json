@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/taskapi/static/css/main.8427843f.css",
-    "main.js": "/taskapi/static/js/main.d05fc3bd.js",
+    "main.css": "/taskapi/static/css/main.a4cdf87e.css",
+    "main.js": "/taskapi/static/js/main.e9ff0153.js",
     "index.html": "/taskapi/index.html",
-    "main.8427843f.css.map": "/taskapi/static/css/main.8427843f.css.map",
-    "main.d05fc3bd.js.map": "/taskapi/static/js/main.d05fc3bd.js.map"
+    "main.a4cdf87e.css.map": "/taskapi/static/css/main.a4cdf87e.css.map",
+    "main.e9ff0153.js.map": "/taskapi/static/js/main.e9ff0153.js.map"
   },
   "entrypoints": [
-    "static/css/main.8427843f.css",
-    "static/js/main.d05fc3bd.js"
+    "static/css/main.a4cdf87e.css",
+    "static/js/main.e9ff0153.js"
   ]
 }
