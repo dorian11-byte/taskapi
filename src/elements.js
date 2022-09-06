@@ -10,7 +10,6 @@ const {useState, useEffect} = React;
 function Elements() {
 
   const [pokemons, setPokemons] = useState([]);
-  const [searching, setSearching] = useState(false);
 
   const fetchPokemons = async () => {
     try {

@@ -1,25 +1,30 @@
+import React from 'react';
 import '../styles.css';
 import Navbar from './navbar';
 import {useParams} from "react-router";
+const {useState, useEffect} = React;   
 
+const Detials = () => {
 
-const Detials = ({params}) => {
+        const [detail , setDetail] = useState([]);
 
-        //const params = useParams();
-        const { abilities, moves} = params;
+        const params = useParams();
 
-        fetch(`https://pokeapi.co/api/v2/pokemon/${params.id}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-            })
+        const url = `https://pokeapi.co/api/v2/pokemon/${params.id}`
 
+        const fetchDetail = async () => {
+            const response = await fetch(url)
+            const data = await response.json()
+            console.log(data)
+        }
+        
+        fetchDetail()
 
         return (
             <div>
                 <Navbar />
-                {params.id}
-                {abilities}
+
+                {params.id} 
                 <div className="pokemon-card-detail">
 
                     <div className="pokemon-title-name">
